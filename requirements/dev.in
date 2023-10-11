@@ -1,0 +1,3 @@
+build # CLI to build a distribution package
+twine # CLI to upload the distribution package to PyPi
+pip-compile-multi # CLI to pin (direct & indirect) dependencies versions
