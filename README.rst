@@ -11,7 +11,7 @@ Unix/macOS:
 
 .. code-block:: sh
 
-    find ./dist/ -mindepth 1 -delete && python -m build
+    [ -d "./dist/" ] && find ./dist/ -mindepth 1 -delete; python -m build
 
 Windows:
 
@@ -24,6 +24,18 @@ Unix/macOS:
 .. code-block:: sh
 
     python3 -m twine upload --username __token__ --repository testpypi dist/*
+
+Windows:
+
+.. code-block:: powershell
+
+    py -m twine upload --username __token__ --repository testpypi dist/*
+
+Unix/macOS:
+
+.. code-block:: sh
+
+    python3 -m twine upload --username __token__ dist/*
 
 Windows:
 
