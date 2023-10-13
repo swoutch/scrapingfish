@@ -1,11 +1,11 @@
 How to contribute to scrapingfish
-==========================
+#################################
 
 Thank you for considering contributing to scrapingfish!
 
 
 First time setup
-~~~~~~~~~~~~~~~~
+****************
 
 -   Fork scrapingfish to your GitHub account by clicking the `Fork`_ button.
 -   `Clone`_ the main repository locally.
@@ -48,7 +48,7 @@ First time setup
 
 
 Start coding
-~~~~~~~~~~~~
+************
 
 -   Create a branch to identify the issue you would like to work on. Branch off
     of the "main" branch.
@@ -69,3 +69,11 @@ Start coding
         $ git push --set-upstream fork your-branch-name
 
 .. _create a pull request: https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
+
+
+For maintainers only
+********************
+
+Build
+=====
+[ -d "./dist/" ] && find ./dist/ -mindepth 1 -delete; python -m tasks.build
