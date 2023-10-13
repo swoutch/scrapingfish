@@ -77,3 +77,8 @@ For maintainers only
 Build
 =====
 [ -d "./dist/" ] && find ./dist/ -mindepth 1 -delete; python -m tasks.build
+
+
+Lock
+=====
+python -m tasks.lock
