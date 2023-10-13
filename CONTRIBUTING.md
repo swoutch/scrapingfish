@@ -32,6 +32,16 @@ Thank you for considering contributing to scrapingfish!
   pip install -r requirements/dev.txt && pip install -e .
   ```
 
+## Each time you enter the directory
+Activate the virtualenv:
+```shell
+python3 -m venv .venv
+. .venv/bin/activate
+```
+Or on Windows:
+```powershell
+.venv\Scripts\activate
+```
 
 
 ## Start coding
@@ -56,10 +66,10 @@ Thank you for considering contributing to scrapingfish!
 
 ### Build
 ```shell
-python3 -m tasks.build
+python3 -m build
 ```
 
 ### Lock
 ```shell
-python3 -m tasks.lock
+pip-compile-multi
 ```
